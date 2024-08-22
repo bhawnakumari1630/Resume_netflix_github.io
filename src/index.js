@@ -4,6 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+// Suppress specific warnings if necessary
+console.warn = (message) => {
+  if (!message.includes("Violation") && !message.includes("Unchecked runtime.lastError")) {
+    console.log(message);
+  }
+};
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
