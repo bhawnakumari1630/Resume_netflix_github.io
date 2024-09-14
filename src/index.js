@@ -1,16 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './App.js';
 import reportWebVitals from './reportWebVitals';
-
-
-// Suppress specific warnings if necessary
-console.warn = (message) => {
-  if (!message.includes("Violation") && !message.includes("Unchecked runtime.lastError")) {
-    console.log(message);
-  }
-};
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

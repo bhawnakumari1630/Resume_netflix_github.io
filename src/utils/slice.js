@@ -4,6 +4,33 @@ const appSlice = createSlice({
     name : 'appSlice',
     initialState : {
         isMenuOpen : true ,
+        searchQuery : '',
+    },
+    reducers : {
+        openMenu : (state) => {
+            state.isMenuOpen = true 
+        },
+        toggleMenu : (state) => {
+            state.isMenuOpen = !state.isMenuOpen
+        },
+        closeMenu : (state) => {
+            state.isMenuOpen = false
+        },
+        search : (state, action ) => {
+            state.searchQuery = action.payload
+        }
+    }
+})
+
+export const {openMenu, toggleMenu, closeMenu} = appSlice.actions
+export default appSlice.reducer
+
+
+/*
+ const appSlice = createSlice({
+    name : 'appSlice',
+    initialState : {
+        isMenuOpen : true ,
     },
     reducers : {
         openMenu : (state) => {
@@ -17,10 +44,7 @@ const appSlice = createSlice({
         }
     }
 })
-
-export const {openMenu, toggleMenu, closeMenu} = appSlice.actions
-export default appSlice.reducer
-
+*/
 
 
 

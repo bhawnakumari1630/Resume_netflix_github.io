@@ -8,3 +8,16 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.chatScrollbar::-webkit-scrollbar{
+    width: 7px;
+    /* background: #000; */
+}
+.chatScrollbar::-webkit-scrollbar-track{
+    background: #f4f4f4b6;
+    border-radius: 25px;
+}
+.chatScrollbar::-webkit-scrollbar-thumb{
+    background: #1f1f1fb9;
+    border-radius: 25px;
+}

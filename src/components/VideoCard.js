@@ -33,4 +33,12 @@ function VideoCard({ info }) {
   );
 }
 
+export const HOC_card = ({info}) => {
+  return (
+    <div className=" border-2 border-emerald-500 ">
+      <VideoCard info={info} />
+    </div>
+  )
+}
+
 export default VideoCard;

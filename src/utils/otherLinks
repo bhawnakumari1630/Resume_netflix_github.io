@@ -1,0 +1,2 @@
+// another yt search api
+const url = 'https://clients1.google.com/complete/search?client=youtube&hl=en&gl=sg&gs_rn=64&gs_ri=youtube&ds=yt&cp=3&gs_id=2u&q=' + query;
